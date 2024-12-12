@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator-display">
+      <input type="text" id="display" readonly>
+    </div>
+    <div class="calculator-buttons">
+      <!-- Row 1 -->
+      <button type="button" class="btn clear" onclick="clearDisplay()">C</button>
+      <button type="button" class="btn" onclick="toggleSign()">±</button>
+      <button type="button" class="btn" onclick="insertNumber('%')">%</button>
+      <button type="button" class="btn operator" onclick="insertNumber('/')">÷</button>
+      <!-- Row 2 -->
+      <button type="button" class="btn" onclick="insertNumber(7)">7</button>
+      <button type="button" class="btn" onclick="insertNumber(8)">8</button>
+      <button type="button" class="btn" onclick="insertNumber(9)">9</button>
+      <button type="button" class="btn operator" onclick="insertNumber('*')">×</button>
+      <!-- Row 3 -->
+      <button type="button" class="btn" onclick="insertNumber(4)">4</button>
+      <button type="button" class="btn" onclick="insertNumber(5)">5</button>
+      <button type="button" class="btn" onclick="insertNumber(6)">6</button>
+      <button type="button" class="btn operator" onclick="insertNumber('-')">−</button>
+      <!-- Row 4 -->
+      <button type="button" class="btn" onclick="insertNumber(1)">1</button>
+      <button type="button" class="btn" onclick="insertNumber(2)">2</button>
+      <button type="button" class="btn" onclick="insertNumber(3)">3</button>
+      <button type="button" class="btn operator" onclick="insertNumber('+')">+</button>
+      <!-- Row 5 -->
+      <button type="button" class="btn" onclick="insertNumber(0)">0</button>
+      <button type="button" class="btn" onclick="insertNumber('.')">.</button>
+      <button type="button" class="btn" onclick="backspace()">DEL</button>    
+      <button type="button" class="btn equal" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

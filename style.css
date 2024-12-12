@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  /* Calculator Container */
+  .calculator {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Display Section */
+  .calculator-display {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  #display {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: right;
+  }
+  
+  /* Buttons Section */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #d0d3d4;
+  }
+  
+  /* Operator Buttons */
+  .operator {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .operator:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Clear Button */
+  .clear {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .clear:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Equal Button */
+  .equal {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .equal:hover {
+    background-color: #229954;
+  }
+  
